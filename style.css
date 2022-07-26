@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100%;
+  font-family: "Rubik", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #F2F2F2;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.header-logo {
+  color: #000000;
+}
+
+.header-logo:hover,
+.footer-logo:hover {
+  opacity: 0.8;
+}
+
+.popover {
+  position: relative;
+  background-color: #000000;
+  width: 320px;
+}
+
+.popover-wrapper {
+  padding: 20px;
+}
+
+.popover-list {
+  display: grid;
+  grid-template-columns: 62px auto;
+  grid-template-rows: 43px 43px;
+  grid-row-gap: 41px;
+  margin: 0;
+  padding: 0;
+}
+
+.popover-definition {
+  margin: 0;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.popover-close-button {
+  position: absolute;
+  background-image: url("images/vector/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+}
+
+.button-1 {
+  top: 20px;
+  right: 20px;
+}
+
+.button-2 {
+  top: 94px;
+  right: 20px;
+}
+
+.shopping-basket {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 0;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background: #1A1A1A;
+}
+
+.basket-button-wrapper {
+  padding: 20px;
+}
+
+.basket-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 25px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  background: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* .subcatalog {
+  display: none;
+} */
+
+.product-number {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.specifications {
+  display: flex;
+}
+
+.specifications-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.specifications-definition {
+  order: -1;
+}
+
+/* .hidden {
+  display: none;
+} */
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  gap: 40px;
+}
+
+.products-term {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  align-items: center;
+  justify-content: center;
+  background: #FFE17F;
+}
+
+.products-term:hover {
+  background: #FFC700;
+}
+
+.products-link-virtual {
+  width: 97px;
+  height: 55px;
+  content: url("images/vector/virtual.svg");
+}
+
+.products-link-selfie {
+  width: 86px;
+  height: 117px;
+  content: url("images/vector/selfie.svg");
+}
+
+.products-link-action {
+  width: 71px;
+  height: 87px;
+  content: url("images/vector/action.svg");
+}
+
+.products-link-fitness {
+  width: 107px;
+  height: 65px;
+  content: url("images/vector/fitness.svg");
+}
+
+.products-link-smart {
+  width: 56px;
+  height: 98px;
+  content: url("images/vector/smart.svg");
+}
+
+.products-link-copter {
+  width: 132px;
+  height: 69px;
+  content: url("images/vector/copter.svg");
+}
+
+.shipping-image {
+  visibility: hidden;
+}
+
+.shipping-image::before {
+  content: url("images/vector/delivery.svg");
+  visibility: visible;
+  width: 136px;
+  height: 164px;
+}
+
+.warranty-image {
+  visibility: hidden;
+}
+
+.warranty-image::before {
+  content: url("images/vector/warranty.svg");
+  visibility: visible;
+  width: 171px;
+  height: 195px;
+}
+
+.credit-image {
+  visibility: hidden;
+}
+
+.credit-image::before {
+  content: url("images/vector/credit.svg");
+  visibility: visible;
+  width: 156px;
+  height: 188px;
+}
+
+.footer-logo {
+  color: #FFC700;
+}
