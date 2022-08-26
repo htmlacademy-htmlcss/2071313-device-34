@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -107,15 +109,8 @@
       </div>
       <!-- Для отображения каталога товаров и изменения стостояния кнопки необходимо добавить в разметку тегу nav класс navigation-active -->
       <nav class="navigation">
-        <!-- <a class="catalog-link" href="#">Каталог товаров</a> -->
-
         <button class="catalog-open" type="button">Каталог товаров
           <span class="catalog-button"></span>
-
-          <!-- <button class="catalog-button" type="button">
-            <span class="visually-hidden">Показать каталог товаров</span>
-          </button> -->
-
         </button>
         <div class="sub-catalog-container">
           <div class="sub-catalog-wrapper">
@@ -189,7 +184,7 @@
                 под стандартную
                 камеру.
               </p>
-              <a class="more-detailed yellow-element" href="#">Подробнее</a>
+              <a class="page-links more-detailed yellow-element" href="#">Подробнее</a>
               <dl class="specifications">
                 <div class="specifications-wrapper">
                   <dt class="specifications-term">Дальность полета</dt>
@@ -210,7 +205,7 @@
               <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
                 соблюдать диету.
               </p>
-              <a class="more-detailed yellow-element" href="#">Подробнее</a>
+              <a class="page-links more-detailed yellow-element" href="#">Подробнее</a>
               <dl class="specifications">
                 <div class="specifications-wrapper">
                   <dt class="specifications-term">Без подзарядки</dt>
@@ -228,7 +223,7 @@
               <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
                 метров длиной и весом всего 5 кг.
               </p>
-              <a class="more-detailed yellow-element" href="#">Подробнее</a>
+              <a class="page-links more-detailed yellow-element" href="#">Подробнее</a>
               <dl class="specifications">
                 <div class="specifications-wrapper specifications-wrapper-width">
                   <dt class="specifications-term">Длина палки</dt>
@@ -323,10 +318,11 @@
       <section class="shipping">
         <div class="shipping-container">
           <div class="shipping-wrapper">
-            <!-- Для изменения цвета кнопки необходимо добавить к button класс shipping-button-active -->
+            <!-- Для изменения цвета кнопки необходимо добавить к button класс shipping-button-active и убрать класс yellow-element-->
             <ul class="shipping-list">
               <li class="shipping-item">
-                <button class="yellow-element shipping-button shipping-button-active" type="button">Доставка</button>
+                <button class="shipping-button shipping-button-color shipping-button-active"
+                  type="button">Доставка</button>
               </li>
               <li class="shipping-item">
                 <button class="yellow-element shipping-button" type="button">Гарантия</button>
@@ -388,7 +384,7 @@
               <a class="information-link" href="#">ТоксБерри</a>
             </li>
           </ul>
-          <a class="feedback-link yellow-element" href="#">Подробнее о нас</a>
+          <a class="page-links feedback-link yellow-element" href="#">Подробнее о нас</a>
         </div>
 
         <div class="contacts">
@@ -402,7 +398,7 @@
           <a class="contacts-text contact-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <p class="contacts-paragraph contact-time">Время работы</p>
           <p class="contacts-text contacts-hours">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
-          <a class="contact-link yellow-element" href="#">Напишите нам</a>
+          <a class="page-links contact-link yellow-element" href="#">Напишите нам</a>
         </div>
       </section>
 
@@ -555,9 +551,11 @@
             <input class="modal-input modal-input-bring" name="free-field" type="text" placeholder="В свободной форме"
               id="need-to-bring">
           </div>
-
           <div class="modal-quantity-wrapper">
             <span class="quantity-text">Количество:</span>
+            <button class="tooltip" type="button">i</button>
+            <span class="tooltip-text tooltip-text-shown">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+              к провозу багажа.</span>
             <div class="modal-quantity">
               <button class="modal-less-button" type="button">
                 <svg aria-hidden="true" focusable="false" width="16" height="2" viewBox="0 0 16 2" fill="none"
@@ -575,7 +573,7 @@
                 <span class="visually-hidden">Больше</span>
               </button>
             </div>
-            <button class="yellow-element modal-send-button" type="button">Отправить</button>
+            <button class="yellow-element shipping-button modal-send-button" type="button">Отправить</button>
           </div>
         </div>
       </div>
