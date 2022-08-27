@@ -972,6 +972,7 @@ body {
   border: 2px solid #000000;
   border-radius: 50%;
   vertical-align: text-top;
+  cursor: pointer;
 }
 
 .radio-btn:focus-visible {
@@ -1240,6 +1241,8 @@ body {
   text-transform: uppercase;
   color: #000000;
   cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .cards-product-button:hover {
@@ -1289,6 +1292,8 @@ body {
   background-color: #EBEBEB;
   color: #000000;
   cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .pagination-button:hover {
@@ -1336,6 +1341,7 @@ body {
   opacity: 0.3;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .pagination-number:hover {
